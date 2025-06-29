@@ -1,18 +1,41 @@
-<!DOCTYPE html>
-<html lang="en">
+{% extends 'base.html' %}
+{% block content %}
+<section class="hero-section container">
+    <h2 class="hero-title">Helping You Make Smarter Decisions with Data and AI</h2>
+    <p class="hero-subtitle">Blending deep technical knowledge with creativity and clarity—built for the curious mind
+        ready to lead the AI era.</p>
+    <a href="/downloads" class="cta-button">Download Free AI Starter Toolkit</a>
+</section>
 
-<head>
-    <meta charset="UTF-8">
-    <title>My Personal Brand</title>
-    <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
-</head>
+<section class="trust-section container">
+    <h3>Trusted by learners from top communities and workplaces</h3>
+    <div class="logo-grid">
+        <img src="/static/images/logo1.png" alt="Brand 1">
+        <img src="/static/images/logo2.png" alt="Brand 2">
+        <img src="/static/images/logo3.png" alt="Brand 3">
+    </div>
+</section>
 
-<body>
-    <header>
-        <h1>Helping People Make Smarter Decisions with Data & AI</h1>
-        <p>Clarity. Accessibility. Purpose.</p>
-        <a href="/downloads">📥 Get Free Resources</a>
-    </header>
-</body>
+<section class="about-preview container">
+    <h3>About Me</h3>
+    <p>I'm Rohit Bhandari, a data engineer and AI strategist who helps everyday learners and professionals navigate the
+        AI revolution with clarity, confidence, and real-world application. I believe the future belongs to those who
+        start now—with the right tools and mindset.</p>
+    <a href="/about" class="link-button">Read More</a>
+</section>
 
-</html>
+<section class="downloads-preview container">
+    <h3>Free Resources</h3>
+    <div class="resource-cards">
+        <div class="card">
+            <h4>AI Beginner Toolkit</h4>
+            <p>A step-by-step PDF to begin your AI journey today.</p>
+        </div>
+        <div class="card">
+            <h4>Prompt Engineering Sheet</h4>
+            <p>Boost your ChatGPT skills with proven prompt frameworks.</p>
+        </div>
+    </div>
+    <a href="/downloads" class="link-button">Browse Downloads</a>
+</section>
+{% endblock %}
